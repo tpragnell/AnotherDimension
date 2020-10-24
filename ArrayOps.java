@@ -39,4 +39,8 @@ public class ArrayOps{
     }
     return biggest;
   }
+
+  public static int sum2D(int[][] arr){
+    return sum(sumRows(arr));
+  }
 }

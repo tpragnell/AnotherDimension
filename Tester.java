@@ -26,5 +26,8 @@ public class Tester{
 
     //Test Method "largestInRows"
     System.out.println( "The largest in the rows is " + Arrays.toString(ArrayOps.largestInRows(a)));
+
+    // Test Method "sum2D"
+    System.out.println( "The sum of the 2D array is " + ArrayOps.sum2D(a));
   }
 }
