@@ -6,7 +6,11 @@ public class Tester{
 
   public static void main(String[] args) {
     // Test Method "sum"
-    int[] array = {1,2,3};
-    System.out.println( "The sum of 1,2,3 is " + ArrayOps.sum(array));
+    int len = args.length;
+    int[] array = new int[len];
+    for(int i=0; i<len; i++){
+      array[i] = Integer.parseInt(args[i]);
+    }
+    System.out.println( "The sum is " + ArrayOps.sum(array));
   }
 }
