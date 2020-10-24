@@ -13,7 +13,19 @@ public class Tester{
     int[][] a = {{  1,  0, 12, -1 },
                  {  7, -2,  2,  1 },
                  { -5, -2,  2, -9 }};
+
     int[] b = { 1, 3 ,5 };
+
+    int[][] c = {{  1,  2,  3,  4 },
+                 {  2,  3,  4,  1 },
+                 {  3,  4,  1,  2 }};
+
+    int[][] d = {{  1,  1,  1 },
+                 {  2,  2,  2 },
+                 {  3,  3,  3 }};
+
+    int[][] e = {{  2,  2,  2 },
+                 {  2,  2,  2 }};
 
     // Test Method "sum"
     System.out.println( "The sum is " + ArrayOps.sum(b));
@@ -32,5 +44,10 @@ public class Tester{
 
     // Test Method "sumCols"
     System.out.println( "The sums of the cols are " + Arrays.toString(ArrayOps.sumCols(a)));
+
+    // Test Method "isRowMagic"
+    System.out.println( "Is this rowMagic? " + ArrayOps.isRowMagic(c));
+    System.out.println( "Is this rowMagic? " + ArrayOps.isRowMagic(d));
+    System.out.println( "Is this rowMagic? " + ArrayOps.isRowMagic(e));
   }
 }
