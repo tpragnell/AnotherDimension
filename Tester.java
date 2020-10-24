@@ -49,5 +49,12 @@ public class Tester{
     System.out.println( "Is this rowMagic? " + ArrayOps.isRowMagic(c));
     System.out.println( "Is this rowMagic? " + ArrayOps.isRowMagic(d));
     System.out.println( "Is this rowMagic? " + ArrayOps.isRowMagic(e));
+
+    // Test Method "isColMagic"
+    System.out.println( "Is this colMagic? " + ArrayOps.isColMagic(c));
+    System.out.println( "Is this colMagic? " + ArrayOps.isColMagic(d));
+    System.out.println( "Is this colMagic? " + ArrayOps.isColMagic(e));
+
+
   }
 }
