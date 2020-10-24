@@ -10,8 +10,13 @@ public class ArrayOps{
   }
 
   public static int largest(int[] arr){
-    return 0;
-
+    int len = arr.length;
+    int largest = arr[0];
+    for(int i=0; i<len; i++){
+      if(arr[i] > largest)
+        largest = arr[i];
+    }
+    return largest;
   }
 
 
