@@ -27,6 +27,9 @@ public class Tester{
     int[][] e = {{  2,  2,  2 },
                  {  2,  2,  2 }};
 
+    int[][] f = {{  2,  4,  2 },
+                 {  2,  2,  2 }};
+
     // Test Method "sum"
     System.out.println( "The sum is " + ArrayOps.sum(b));
 
@@ -55,6 +58,9 @@ public class Tester{
     System.out.println( "Is this colMagic? " + ArrayOps.isColMagic(d));
     System.out.println( "Is this colMagic? " + ArrayOps.isColMagic(e));
 
+    // Test Method "isLocationMagic"
+    System.out.println( "Is this locationMagic? " + ArrayOps.isLocationMagic(f, 0, 1));
+    System.out.println( "Is this locationMagic? " + ArrayOps.isLocationMagic(f, 1, 1));
 
   }
 }
