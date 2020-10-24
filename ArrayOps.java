@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayOps{
 
   public static int sum(int[] arr){
@@ -42,5 +44,26 @@ public class ArrayOps{
 
   public static int sum2D(int[][] arr){
     return sum(sumRows(arr));
+  }
+
+  public static int[][] transformMatrix(int[][] matrix){
+    // Assuming matrix is rectangular
+    int rowsLen = matrix.length;
+    int colsLen = matrix[0].length;
+    int[][] transformed = new int[colsLen][rowsLen];
+    for(int i=0; i<rowsLen; i++){
+      for(int k=0; k<colsLen; k++){
+        transformed[k][i] = matrix[i][k];
+      }
+    }
+    // Debugging
+    // for (int i = 0; i<colsLen; i++)
+    //   System.out.println(Arrays.toString(transformed[i]));
+
+    return transformed;
+  }
+
+  public static int[] sumCols(int[][] matrix){
+    return sumRows(transformMatrix(matrix));  
   }
 }

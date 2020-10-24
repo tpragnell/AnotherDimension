@@ -22,12 +22,15 @@ public class Tester{
     System.out.println( "The largest value is " + ArrayOps.largest(b));
 
     //Test Method "sumRows"
-    System.out.println( "The sum of the rows is " + Arrays.toString(ArrayOps.sumRows(a)));
+    System.out.println( "The sums of the rows are " + Arrays.toString(ArrayOps.sumRows(a)));
 
     //Test Method "largestInRows"
     System.out.println( "The largest in the rows is " + Arrays.toString(ArrayOps.largestInRows(a)));
 
     // Test Method "sum2D"
     System.out.println( "The sum of the 2D array is " + ArrayOps.sum2D(a));
+
+    // Test Method "sumCols"
+    System.out.println( "The sums of the cols are " + Arrays.toString(ArrayOps.sumCols(a)));
   }
 }
