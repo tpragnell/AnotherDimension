@@ -24,5 +24,7 @@ public class Tester{
     //Test Method "sumRows"
     System.out.println( "The sum of the rows is " + Arrays.toString(ArrayOps.sumRows(a)));
 
+    //Test Method "largestInRows"
+    System.out.println( "The largest in the rows is " + Arrays.toString(ArrayOps.largestInRows(a)));
   }
 }
