@@ -42,8 +42,8 @@ public class Tester{
     //Test Method "largestInRows"
     System.out.println( "The largest in the rows is " + Arrays.toString(ArrayOps.largestInRows(a)));
 
-    // Test Method "sum2D"
-    System.out.println( "The sum of the 2D array is " + ArrayOps.sum2D(a));
+    // Test Method "sum matrix"
+    System.out.println( "The sum of the 2D array is " + ArrayOps.sum(a));
 
     // Test Method "sumCols"
     System.out.println( "The sums of the cols are " + Arrays.toString(ArrayOps.sumCols(a)));
